@@ -1,0 +1,19 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin=0;
+}
+
+
+.bg {
+    background: url('images/flower.avif') no-repeat center
+    center/cover;
+}
