@@ -14,7 +14,7 @@ body {
 
 
 .bg {
-    background-image: url('../images/flower.avif');
+    background-image: url('../images/flower.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
