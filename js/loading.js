@@ -1,4 +1,6 @@
 const loadText = document.querySelector('.loading-text')
 const bg =document.querySelector('.bg')
 
-loadText.innerText = "80%"
+let load = 0
+
+loadText.innerText = load
