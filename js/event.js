@@ -7,15 +7,14 @@ element1.addEventListener('click', ()=>{
     element1.innerHTML = "I've been clicked! <br> Try double clicking me."
 })
 
-element1.addEventListener('dbt click',()=>{
-    element1.innerHTML = "I've been double clicked! <br>
-    Try single clicking me."
+element1.addEventListener('dblclick',()=>{
+    element1.innerHTML = "I've been double clicked! <br> Try single clicking me."
 })
 
 
 element2.addEventListener('mouseover',()=>{
     element2.style.color = "pink"
-    element2.style.backgroundColor = "#blue"
+    element2.style.backgroundColor = "blue"
 })
 
 element2.addEventListener('mouseout', ()=>{
@@ -29,7 +28,7 @@ let positionX = 0;
 document.addEventListener('keyup', (event)=>{
     console.log(event.key)
 
-    if (event.key == "ArrowDown') {
+    if (event.key == 'ArrowDown') {
         positionY = positionY + 10
         }
         else if (event.key == 'ArrowUp') {
@@ -41,8 +40,8 @@ document.addEventListener('keyup', (event)=>{
         else if (event.key == 'ArrowRight') {
                 positionX = positionX - 10
         }
-        element3.style.top = '${positionY}px'
-        element3.style.right = '${positionX}px'
+        element3.style.top = `${positionY}px`
+        element3.style.right = `${positionX}px`
 
 })
 
