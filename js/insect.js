@@ -31,6 +31,7 @@ function startGame() {
 }
 
 
+
 function increaseTime() {
     let s = seconds % 60
     let m = Math.floor(seconds / 60)
@@ -56,7 +57,7 @@ function createInsect (){
 
     insect.addEventListener('click' ()>={
         score = score + 1
-        scoreElement.innerHTML = 
+        scoreElement.innerHTML = `Score: ${score}`
     })
 
 }
