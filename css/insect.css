@@ -102,11 +102,15 @@ h1 {
     z-index: 100;
     text-align: center;
     position: absolute;
-    top: 20%;
+    top: 0;
+    left: 50%;
+    tranform: translate(-50%,-150%);
     opacity: 0;
+    transition: transform 1s ease-in;
 }
 
 .message.visible {
+    transform: translate(-50%, 150%);
     opacity: 1;
 }
 
