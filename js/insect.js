@@ -71,14 +71,17 @@ function addInsects() {
     setTimeout(createInsect, 1500)
 }
 
+
+console.log(scoreEl)
 function increaseScore() {
     score = score + 1
     if (score == 10) {
         message.classList.add('visible')
     }
-    console.log(score)
-    scoreEl.HTML = `Score: ${score}`
+    scoreEl.innerHTML = `Score: ${score}`
 }
+
+
 
 function getRandomLocation(){
     const width = window.innerWidth
