@@ -8,7 +8,7 @@ function breatheAnimation() {
     container.classList.add('grow')
 
     setTimeout( ()=> {
-        text.innerHTMl = "Hold'
+        text.innerHTMl = 'Hold'
     }, 3000)
 
     setTimeout(() => {
