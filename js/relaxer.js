@@ -1,8 +1,7 @@
 const container = document.getElementById('container')
 const txt = document.getElementById('text')
 
-breatheAnimation()
-breatheAnimation()
+setInterval(breatheAnimation, 7500)
 function breatheAnimation() {
     text.innerHTML = 'Breathe In'
     container.classList.remove('shrink')
