@@ -6,5 +6,9 @@
 
 body {
     background: #224941 url('../images/ocean.avif') no-repeat center center/cover;
+    color: white;
+    font-family: 'Monserrat', sans-serif;
+    min-height: 100 vh;
+    display: flex;
 
 }
