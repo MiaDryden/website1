@@ -52,14 +52,13 @@ body {
     position: absolute;
     bottom: 400px;
     right: 200px;
-    z-index: -1;
 }
 
 .eyes.left {
     position: absolute;
     top: 100px;
     left: 55px;
-    z-index: -1;
+
 }
 
 
