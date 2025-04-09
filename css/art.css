@@ -67,18 +67,22 @@ body {
 
 
 .Larm {
-    width: 0;
-    height: 0;
-    border-left: 20px solid brown;
-    border-right: 20px solid brown;
-    border-bottom: 20px solid brown;
-    z-index: -1;
+    background-color: brown;
+    width: 10px;
+    height: 110px;
+    rotate: 120deg;
+    position: absolute;
+    top: 350px;
+    right: 875px;
 
 }
 
 .Rarm {
-    background-color: brown;
     position: absolute;
-    height: 40px;
+    background-color: brown;
     width: 10px;
+    height: 110px;
+    rotate: 60deg;
+    top: 350px;
+    right: 510px;
 }
