@@ -5,6 +5,9 @@
 
 body {
     background-color: rgb(255,253,208);
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .top {
@@ -64,12 +67,12 @@ body {
 
 
 .Larm {
-    background-color: brown;
-    position: absolute;
-    height: 200px;
-    width: 17.5px;
-    top: 125px;
-    right: 800px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid brown;
+    border-right: 20px solid brown;
+    border-bottom: 20px solid brown;
+    z-index: -1;
 
 }
 
