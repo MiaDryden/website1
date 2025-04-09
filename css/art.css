@@ -57,7 +57,7 @@ body {
 .nose {
     position: absolute;
     border-left: 15px solid orange;
-    border-right: 15px solid orange;
+    border-right: 15px solid transparent;
     border-bottom: 15px solid orange;
     left: 240px;
     bottom: 370px;
