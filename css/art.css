@@ -49,13 +49,11 @@ body {
     border-radius: 50%;
 }
 .eyes.right {
-    position: absolute;
-    bottom: 400px;
-    right: 200px;
+    bottom: 120px;
+    right: 120px;
 }
 
 .eyes.left {
-    position: absolute;
     top: 100px;
     left: 55px;
 
