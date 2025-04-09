@@ -1,0 +1,82 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255,253,208);
+}
+
+.top {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 550px;
+}
+
+.middle {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 300px;
+    left: 500px;
+
+}
+
+.bottom {
+    height: 300px;
+    width: 300px;
+    bottom: -250px;
+    right: 550px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.Reye {
+    position: absolute;
+    background-color: light blue;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+
+}
+
+.Leye {
+
+}
+
+.nose {
+    background-color: dark blue;
+    position: relative;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    left: 240px;
+    bottom: 370px;
+
+}
+
+
+.Larm {
+    background-color: brown;
+    position: absolute;
+    height: 200px;
+    width: 25px;
+    top: 70px;
+    right 400px;
+
+}
+
+.Rarm {
+    background-color: brown;
+    position: relative;
+    height: 40px;
+    width: 10px;
+
+}
