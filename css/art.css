@@ -56,7 +56,19 @@ body {
 .eyes.left {
     top: 100px;
     left: 55px;
+}
 
+.buttons {
+    position: absolute;
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.buttons.1 {
+    top: 400px;
+    right: 300px;
 }
 
 
