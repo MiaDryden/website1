@@ -67,16 +67,15 @@ body {
     background-color: brown;
     position: absolute;
     height: 200px;
-    width: 25px;
-    top: 70px;
-    right 400px;
+    width: 17.5px;
+    top: 125px;
+    right: 800px;
 
 }
 
 .Rarm {
     background-color: brown;
-    position: relative;
+    position: absolute;
     height: 40px;
     width: 10px;
-
 }
