@@ -48,14 +48,15 @@ body {
     width: 12.5px;
     border-radius: 50%;
 }
-.eyes.right {
+.right {
+    position: absolute;
     top: 100px;
     left: 55px;
+    z-index: -1;
 }
 
-.Leye {
+.eyes.left
 
-}
 
 .nose {
     position: absolute;
