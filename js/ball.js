@@ -1,12 +1,12 @@
 const ball = document.createElement('div')
-const ballRadius = 100
+const ballRadius = 50
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 let ballXPosition = windowWidth / 2 - ballRadius
 let ballYPosition = windowHeight/2 - ballRadius
 let ballSpeed = 5
 let ballXDirection = 1
-let BallYDirection = 1
+let ballYDirection = 1
 
 setInterval(moveBall, 10)
 
@@ -15,7 +15,7 @@ function moveBall(){
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
     ball.style.left = `${ballXPosition}px`
     ballYPosition = ballYPosition = ballSpeed * ballYDirection
-    ball.style.left = `${ballYPosition}px`
+    ball.style.top = `${ballYPosition}px`
     if(ballYPosition < 0 || ballYPosition > windowHeight - 2 * ballRadius){
         ballYDirection = ballYDirection * -1;
     }
@@ -35,8 +35,77 @@ function createBall(){
     ball.style.borderRadius = "50%"
     ball.style.backgroundColor = "green"
     ball.style.position = "absolute"
-    ball.style.top = `${ballYPosition}px`
-    ball.style.left = `${ballXPosition}px`
+    ball.style.top = `${windowHeight / 2 - ballRadius}px`
+    ball.style.left = `${windowWidth / 2 - ballRadius}px`
 }
 
+function createLPaddle() {
+    LPaddle.style.height = `${LPaddleHeight}px`
+    LPaddle.style.width = `${LPaddleWidth}px`
+    LPaddle.style.backgroundColor = "red"
+    LPaddle.style.position = "absolute"
+    LPaddle.style.left = "50px"
+    LPaddle.style.top = `${LPaddleYPosition}px`
+    LPaddle.style.borderRadius = "15px"
+}
 
+let wKey = false
+let skey = false
+
+document.addEventListener('keydown', (event) => {
+    if (event.key == 'w') {
+        wKey = true
+    }
+    if (event.key == 's') {
+        skey = true
+    }
+})
+
+document.addEventListener('keyup', (event) => {
+    if (event.key == 'w') {
+        wKey = false
+    }
+    if (event.key == 's') {
+        sKey = false
+    }
+})
+
+function moveBall() {
+    ballXPosition = ballXPosition + ballSpeed * ballXDirection
+    ball.style.left = `${ballXPosition}px`
+    if (ballXPosition < 0 || ballXPosition > windowWidth - 2 * ballRadius) {
+        ballXDirection = ballXDirection * -1
+    }
+    ballYPosition = ballYPosition + ballSpeed * ballYDirection
+    ball.style.top = `${ballYPosition}px`
+    if (ballYPosition < 0 || ballYPosition > windowHeight - 2 * ballRadius) {
+        ballYDirection = ballYDirection * -1
+    }
+
+    let ballTop = ballYPosition
+    let ballBottom = ballYPosition + 2 * ballRadius
+    let ballLeft = ballXPosition
+    let LPaddleTop = LPaddleYPosition
+    let LPaddleBottom = LPaddleYPosition + LPaddleHeight
+    let LPaddleRight = 50 + LPaddleWidth
+
+    if (
+        (ballBottom >= LPaddleTop) &&
+        (ballTop <= LPaddleBottom) &&
+        (ballLeft <= LPaddleRight) &&
+        (ballXDirection == -1)
+    ) {
+        ballXDirection = ballXDirection * -1
+    }
+}
+
+function animate() {
+    moveBall()
+    moveLpaddle()
+    requestAnimationFrame(animate)
+}
+
+createSLboard()
+createBall()
+createLPaddle()
+animate()
