@@ -2,7 +2,7 @@ const ball = document.createElement('div')
 const ballRadius = 50
 const LPaddleWidth = 10
 const LPaddleHeight = 100
-let LPaddle Speed = 15
+let LPaddleSpeed = 15
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
@@ -106,7 +106,7 @@ function moveBall() {
 
 function moveLPaddle() {
     if (wKey == true && LPaddleYPosition > 0) {
-        LPaddlePosition -= LPaddleSpeed
+        LPaddleYPosition -= LPaddleSpeed
     }
     if (sKey == true && LPaddleYPosition < windowHeight - LPaddleHeight) {
         LPaddleYPosition += LPaddleSpeed
