@@ -116,11 +116,10 @@ function moveLPaddle() {
 
 function animate() {
     moveBall()
-    moveLpaddle()
+    moveLPaddle()
     requestAnimationFrame(animate)
 }
 
-createSLboard()
 createBall()
 createLPaddle()
 animate()
