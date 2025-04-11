@@ -1,5 +1,8 @@
 const ball = document.createElement('div')
 const ballRadius = 50
+let LPaddleWidth = 10
+let LPaddleHeight = 100
+let LPaddle Speed = 15
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 let ballXPosition = windowWidth / 2 - ballRadius
