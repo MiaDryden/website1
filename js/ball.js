@@ -7,7 +7,8 @@ let ballYPosition = windowHeight/2 - ballRadius
 let ballSpeed = 5
 let ballXDirection = 1
 let ballYDirection = 1
-
+const LPaddle = document.createElement('div')
+document.body.appendChild(LPaddle)
 setInterval(moveBall, 10)
 
 
