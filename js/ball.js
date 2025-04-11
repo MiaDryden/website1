@@ -50,14 +50,14 @@ function createLPaddle() {
 }
 
 let wKey = false
-let skey = false
+let sKey = false
 
 document.addEventListener('keydown', (event) => {
     if (event.key == 'w') {
         wKey = true
     }
     if (event.key == 's') {
-        skey = true
+        sKey = true
     }
 })
 
