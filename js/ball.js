@@ -1,8 +1,8 @@
 const ball = document.createElement('div')
 const ballRadius = 50
 const LPaddleWidth = 10
-const LPaddleHeight = 100
-let LPaddleSpeed = 15
+const LPaddleHeight = 150
+let LPaddleSpeed = 20
 const windowHeight = window.innerHeight
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
 const windowWidth = window.innerWidth
@@ -19,7 +19,7 @@ setInterval(moveBall, 10)
 function moveBall(){
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
     ball.style.left = `${ballXPosition}px`
-    ballYPosition = ballYPosition = ballSpeed * ballYDirection
+    ballYPosition = ballYPosition + ballSpeed * ballYDirection
     ball.style.top = `${ballYPosition}px`
     if(ballYPosition < 0 || ballYPosition > windowHeight - 2 * ballRadius){
         ballYDirection = ballYDirection * -1;
