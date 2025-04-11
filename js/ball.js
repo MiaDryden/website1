@@ -104,6 +104,16 @@ function moveBall() {
     }
 }
 
+function moveLPaddle() {
+    if (wKey == true && LPaddleYPosition > 0) {
+        LPaddlePosition -= LPaddleSpeed
+    }
+    if (sKey == true && LPaddleYPosition < windowHeight - LPaddleHeight) {
+        LPaddleYPosition += LPaddleSpeed
+    }
+    LPaddle.style.top = `${LPaddleYPosition}px`
+}
+
 function animate() {
     moveBall()
     moveLpaddle()
