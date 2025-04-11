@@ -27,7 +27,7 @@ body {
     border-radius: 50%;
     position: absolute;
     top: 300px;
-    left: 500px;
+    right: 550px;
 
 }
 
@@ -41,21 +41,25 @@ body {
     border-radius: 50%;
 }
 
-.eyes {
-    position: absolute;
+.eye {
+    position: relative;
     background-color: black;
     height: 30px;
     width: 30px;
     border-radius: 50%;
 }
-.eyes.right {
-    bottom: 120px;
-    right: 120px;
+.eye.right {
+    position: relative;
+    background-color: black;
+    top: 50px;
+    right: 70px;
 }
 
-.eyes.left {
-    top: 100px;
-    left: 55px;
+.eye.left {
+    position: relative;
+    background-color: black;
+    top: 50px;
+    left:70px;
 }
 
 .buttons {
@@ -75,7 +79,7 @@ body {
 }
 
 .buttons.3 {
-    
+
 }
 
 
@@ -97,7 +101,7 @@ body {
     rotate: 120deg;
     position: absolute;
     top: 350px;
-    right: 875px;
+    left: 350px;
 
 }
 
