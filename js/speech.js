@@ -1,4 +1,4 @@
-const main = document.querySelecotr('main')
+const main = document.querySelector('main')
 const voiceSelect = document.getElementById('voices')
 const testarea = document.getElementById('text')
 const readBtn = document.getElementById('read')
