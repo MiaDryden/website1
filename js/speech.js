@@ -66,4 +66,5 @@ function createBox(item) {
     <img src="${item.image}" alt = "${item.text}" />
     <p class="info"> ${item.text} </p>
     `
+    main.appendChild(box)
 }
