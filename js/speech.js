@@ -55,3 +55,10 @@ const data = [
         text: "I want to go to Grandma's"
     },
 ]
+
+
+data.forEach(createBox)
+
+function createBox(item) {
+    console.log(item)
+}
