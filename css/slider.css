@@ -64,3 +64,10 @@ body {
     height: 100%;
     width: 100%;
 }
+
+
+button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+}
