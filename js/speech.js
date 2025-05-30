@@ -1,57 +1,59 @@
 const main = document.querySelector('main')
 const voiceSelect = document.getElementById('voices')
-const testarea = document.getElementById('text')
+const textarea = document.getElementById('text')
 const readBtn = document.getElementById('read')
 const toggleBtn = document.getElementById('toggle')
 const closeBtn = document.getElementById('close')
 
+console.log(readBtn)
+
 const data = [
     {
-        image: '../drink.jpg',
+        image: 'drink.jpg',
         text: "I'm Thirsty"
     },
     {
-        image: '../food.jpg',
+        image: 'food.jpg',
         text: "I'm Hungry"
     },
     {
-        image: '../tired.jpg',
+        image: 'tired.jpg',
         text: "I'm tired"
     },
     {
-        image: '../hurt.jpg',
+        image: 'hurt.jpg',
         text: "I'm hurt"
     },
     {
-        image: '../happy.jpg',
+        image: 'happy.jpg',
         text: "I'm happy"
     },
     {
-        image: '../angry.jpg',
+        image: 'angry.jpg',
         text: "I'm angry"
     },
     {
-        image: '../sad.jpg',
+        image: 'sad.jpg',
         text: "I'm sad"
     },
     {
-        image: '../scared.jpg',
+        image: 'scared.jpg',
         text: "I'm scared"
     },
     {
-        image: '../outside.jpg',
+        image: 'outside.jpg',
         text: "I want to go outside"
     },
     {
-        image: '../home.jpg',
+        image: 'home.jpg',
         text: "I want to go home"
     },
     {
-        image: '../school.jpg',
+        image: 'school.jpg',
         text: "I want to go to school"
     },
     {
-        image: '../grandma.jpg',
+        image: 'grandma.jpg',
         text: "I want to go to Grandmas"
     },
 ]
@@ -80,7 +82,7 @@ function createBox(item) {
 }
 
 //Initialize Speech Sythesis
-const message = newSpeechSynthesisUtterance()
+const message = new SpeechSynthesisUtterance()
 
 //Set Text
 function setTextMessage(text) {
@@ -114,7 +116,7 @@ function getVoices() {
         option.value = voice.name
         option.innerText = `${voice.name}${voice.lang}`
 
-        voicesSelect.appendChild(option)
+        voiceSelect.appendChild(option)
     })
 }
 
@@ -123,7 +125,7 @@ speechSynthesis.addEventListener('voiceschanged', getVoices)
 
 
 //Change Voice
-voicesSelect.addEventListener('change',setVoice)
+voiceSelect.addEventListener('change',setVoice)
 
 //Set Voice
 function setVoice(e) {
@@ -132,8 +134,8 @@ function setVoice(e) {
 
 getVoices()
 
-// Read text button
+// // // Read text button
 readBtn.addEventListener('click', () => {
-    setTextMessage("textarea.value")
+    setTextMessage(textarea.value)
         speakText()
 })
